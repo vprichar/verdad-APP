@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Estas Seguro</string>
+    <string name="action_settings">Settings</string>
+    <string name="desactivarNotif">Desactivar notificaciones</string>
+    <string name="activarNotif">Notificaciones</string>
+    <string name="borrarNotif">Borrar notificaciones</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
+    <string name="callToAction">Quiero contratar un seguro</string>
+
+    <string name="alpha_Splash">Settings</string>
+    <string name="textViewLogin">QUIERO ADQUIRIR UN SEGURO</string>
+    <string name="comenzar">COMENZAR</string>
+    <string name="textViewLoginCodigo">INTRODUCIR TU CÓDIGO DE USUARIO</string>
+    <string name="footerLoginCodigo">© Seguros De Verdad 2016</string>
+    <string name="entrar">  ENTRAR  </string>
+    <string name="callToActionText">  De Verdad te ofrece una variedad de seguros a la medida de tus necesidades para que siempre estés seguro.  </string>
+    <string name="title_activity_seguros">SegurosActivity</string>
+    <string name="botonCalltoAction">QUIERO CONTRATAR UN SEGURO</string>
+    <string name="undoText">Desliza de nuevo para eliminar</string>
+</resources>

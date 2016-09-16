@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.allza.deverdad.activities.CallToActionActivity"
+    tools:showIn="@layout/activity_call_to_action">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/frameCallToActionLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/RelativeHeightForLogo"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/paddingBottomLogo"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/callToActionLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="@dimen/paddingBottomLogo"
+                android:paddingLeft="@dimen/paddingLeftRightLogo"
+                android:paddingRight="@dimen/paddingLeftRightLogo"
+                android:paddingTop="@dimen/paddingTopLogo"
+                android:src="@drawable/firma_red" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewCallToAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/callToActionLogo"
+            android:paddingLeft="@dimen/splashLogoPadding"
+            android:paddingRight="@dimen/splashLogoPadding"
+            android:text="@string/callToActionText"
+            android:textAlignment="center"
+            android:textColor="@color/rectanguloSplash"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listViewCallToAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:divider="@color/listViewDividerCallToAction">
+
+    </ListView>
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_deverdad_blur_rojo">
+    <RelativeLayout
+        android:id="@+id/frameLoginLogoCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/RelativeHeightForLogo"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/LoginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/firma_white_new"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/paddingLeftRightLogo"
+            android:paddingRight="@dimen/paddingLeftRightLogo"
+            android:paddingBottom="@dimen/paddingBottomLogo"
+            android:paddingTop="@dimen/paddingTopLogo"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textViewLoginCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backGroundAlphaNegro"
+        android:text="@string/textViewLoginCodigo"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/textoLoginCodigo"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/textViewAdquirirMarginTop"
+        android:paddingTop="@dimen/textViewAdquirirPaddingTop"
+        android:paddingBottom="@dimen/textViewAdquirirPaddingBottom"
+        android:layout_gravity="center"
+        />
+        
+    <EditText
+        android:id="@+id/editTextLoginCodigo"
+        android:layout_width="@dimen/editTextCodigoWidth"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/editTextCodigoPaddingLeftRight"
+        android:paddingRight="@dimen/editTextCodigoPaddingLeftRight"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/editTextCodigoMarginTop"
+        android:hint="Ej. 12345678901011"
+        android:inputType="number"
+        android:lines="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:background="@drawable/edittext_bg"
+        android:paddingBottom="@dimen/buttonLoginPaddingRightLeft"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/buttonLoginCodigo"
+            android:layout_width="@dimen/buttonCodigoWidth"
+            android:layout_height="wrap_content"
+            android:text="@string/entrar"
+            android:textColor="@color/loginButton"
+            android:background="@drawable/button_radius"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:paddingBottom="@dimen/buttonLoginPaddingTopBottom"
+            android:paddingTop="@dimen/buttonLoginPaddingTopBottom"
+            android:paddingLeft="@dimen/buttonLoginPaddingRightLeft"
+            android:paddingRight="@dimen/buttonLoginPaddingRightLeft"
+            android:layout_marginTop="@dimen/editTextCodigoMarginTop"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/buttonLoginCodigo">
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="@dimen/editTextCodigoMarginTop"
+                android:layout_height="@dimen/editTextCodigoMarginTop"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
